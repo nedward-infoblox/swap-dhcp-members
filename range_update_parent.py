@@ -7,7 +7,7 @@ def prix(str):
     print(str)
     exit()
 def outex(st):
-    with open('output.csv', 'w', newline='') as csvfile:
+    with open('ranges_updated.csv', 'w', newline='') as csvfile:
         spamwriter = csv.writer(csvfile)
         spamwriter.writerows(st)
     csvfile.close()
