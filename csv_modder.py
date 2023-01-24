@@ -70,6 +70,7 @@ def modify_csv(networks_csv, ranges_csv, foa_csv, arg1, arg2):
 				r[j] = failoverAssociation
 				r[sa] = 'FAILOVER'
 				r[s] = ''
+				r[m] = ''
 				output.append(r)
 		except Exception as e:
 			print("Error: ", e)
