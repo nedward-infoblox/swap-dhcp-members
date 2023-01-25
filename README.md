@@ -22,20 +22,27 @@ optional arguments:
                         Hostname of server to which DHCP data must be moved
   -f FOA, --foa FOA     Name of Failover Association to which DHCP data must be moved
   -o OUTPUT, --output OUTPUT
-                        Output filename
+                        Output filename (Default: output.csv)
 ```
 
 ## Examples:
 
 ### Move Networks from one server to a list of other Members
 - Assigns the first listed Member as server for Ranges
-`python3 csv_creator.py -s old_server.infoblox.local -m new_1.infoblox.local,new_2.infoblox.local,new_3.infoblox.local`
+```
+python3 csv_creator.py -s old_server.infoblox.local -m new_1.infoblox.local,new_2.infoblox.local,new_3.infoblox.local
+```
 
 ### Move Networks from one server to a Failover Association
 - Finds the Members associated with the FoA and assigns them to the Network
-`python3 csv_creator.py -s old_server.infoblox.local -f APAC_FOA`
+```
+python3 csv_creator.py -s old_server.infoblox.local -f APAC_FOA
+```
 
 ### Do both of the above and write to 'import-data.csv' file
 - Finds the Members associated with the FoA and assigns them to the Network along with the listed Members
 - Ranges are assigned to the FoA
-`python3 csv_creator.py -s old_server.infoblox.local -m new_1.infoblox.local,new_2.infoblox.local -f APAC_FOA -o import-data.csv`
+```
+python3 csv_creator.py -s old_server.infoblox.local -m new_1.infoblox.local,new_2.infoblox.local -f APAC_FOA -o import-data.csv
+```
+
