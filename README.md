@@ -1,4 +1,4 @@
-# mylan-change-members
+# Swap DHCP Member
 Script to create an Infoblox CSV Import file to move all networks and ranges belonging to one Member to other Member(s) or Failover Association
 
 1. Download the CSV of all Networks - networks.csv
