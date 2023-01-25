@@ -11,7 +11,7 @@ parser = argparse.ArgumentParser()
 parser.add_argument("-s", "--source", help = "Hostname of server from which DHCP data must be moved")
 parser.add_argument("-m", "--member", help = "Hostname of server to which DHCP data must be moved")
 parser.add_argument("-f", "--foa", help = "Name of Failover Association to which DHCP data must be moved")
-parser.add_argument("-o", "--output", help = "Output filename", default='output.csv')
+parser.add_argument("-o", "--output", help = "Output filename (Default: output.csv)", default='output.csv')
  
 # Read arguments from command line
 args = parser.parse_args()
