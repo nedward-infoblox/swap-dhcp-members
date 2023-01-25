@@ -30,7 +30,7 @@ optional arguments:
 ### Move Networks from one server to a list of other Members
 - Assigns the first listed Member as server for Ranges
 ```
-python3 csv_creator.py **-s** old_server.infoblox.local -m new_1.infoblox.local,new_2.infoblox.local,new_3.infoblox.local
+python3 csv_creator.py -s old_server.infoblox.local -m new_1.infoblox.local,new_2.infoblox.local,new_3.infoblox.local
 ```
 
 ### Move Networks from one server to a Failover Association
