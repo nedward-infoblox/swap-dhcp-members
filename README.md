@@ -10,6 +10,7 @@ Script to create an Infoblox CSV Import file to move all networks and ranges bel
 ## Steps:
 1. Run `range_update_parent.py` to update the ranges.csv file with Network addresses under 'EA-parent_network'
 2. Run `csv_creator.py`
+3. Import the output file into Infoblox with **Override** as the Import option
 
 ## Usage:
 ```
