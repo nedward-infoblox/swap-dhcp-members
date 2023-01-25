@@ -10,4 +10,17 @@ Steps:
 1. Run range_update_parent.py to update the Ranges with their corresponding Network addresses 
 2. Run csv_modder.py. Syntax:
 
-python3 csv_modder.py <current server name> <new server name 1>,<new server name 2> <output filename>
+Usage:
+```
+python3 csv_creator.py [-h] [-s SOURCE] [-m MEMBER] [-f FOA] [-o OUTPUT]
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -s SOURCE, --source SOURCE
+                        Hostname of server from which DHCP data must be moved
+  -m MEMBER, --member MEMBER
+                        Hostname of server to which DHCP data must be moved
+  -f FOA, --foa FOA     Name of Failover Association to which DHCP data must be moved
+  -o OUTPUT, --output OUTPUT
+                        Output filename
+```
