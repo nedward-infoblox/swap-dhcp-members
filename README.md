@@ -1,14 +1,13 @@
 # Swap DHCP Member
-Script to create an Infoblox CSV Import file to move all networks and ranges belonging to a Member to other Member(s) or Failover Association, without the use of API calls
+Script to create an Infoblox CSV Import file to move all networks and ranges belonging to a Member to other Member(s) or Failover Association, without the use of API
 
 ## Prerequisites
-1. Download the CSV of all Networks - networks.csv
-2. Download the CSV of all Ranges - ranges.csv
-3. Download the CSV of all FoA - foa.csv
-4. Add a column titled 'EA-parent_network' to the ranges.csv file
+1. Download the CSV of all Networks (Infoblox format) - **networks.csv**
+2. Download the CSV of all Ranges (Infoblox format) - **ranges.csv**
+3. Download the CSV of all FoA - **foa.csv**
 
 ## Steps:
-1. Run `range_update_parent.py` to update the ranges.csv file with Network addresses under 'EA-parent_network'
+1. Run `range_update_parent.py` to update the ranges.csv file with Network addresses under 'EA-parent_network' header and rewrite to **ranges_updated.csv** file
 2. Run `csv_creator.py`
 3. Import the output file into Infoblox with **Override** as the Import option
 
